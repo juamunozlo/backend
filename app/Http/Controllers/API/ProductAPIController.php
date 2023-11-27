@@ -103,6 +103,7 @@ class ProductAPIController extends AppBaseController
      */
     public function update($id, UpdateProductAPIRequest $request)
     {
+        dd($request->all());
         log::error($request->all());
         $input = $request->all();
 

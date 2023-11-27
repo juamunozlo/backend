@@ -27,7 +27,7 @@ class UserSeeder extends Seeder
                 'name' => 'Customer',
                 'email' => 'Customer@gmail.com',
                 'password' => bcrypt("customer"),
-                'role' => 2
+                'role' => 3
             ]);
         }
     }
