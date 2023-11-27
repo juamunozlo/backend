@@ -1,3 +1,20 @@
+Proyecto: Crustáceo Cascarudo
+
+Equipo: 11
+
+- Nelson David Aristizabal Amaya
+- Juan Camilo Muñoz López
+- Pablo Restrepo Osorio
+
+Requisitos para correr el backend:
+
+- Instalar XAMPP que contiene PHP y también el servicio de bases de datos MYSQL
+- Instalar Composer que es el manejador de paquetes de PHP
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
