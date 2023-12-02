@@ -19,4 +19,9 @@ Route::middleware('auth')->get('/user', function (Request $request) {
 });
 
 
-Route::resource('products', App\Http\Controllers\API\ProductAPIController::class);
+//Route::resource('products', App\Http\Controllers\API\ProductAPIController::class);
+
+Route::get('/products', [App\Http\Controllers\API\ProductAPIController::class, 'index']);
+Route::post('/products', [App\Http\Controllers\API\ProductAPIController::class, 'store']);
+Route::post('/products/{id}', [App\Http\Controllers\API\ProductAPIController::class, 'update']);
+Route::delete('/products/{id}', [App\Http\Controllers\API\ProductAPIController::class, 'destroy']);

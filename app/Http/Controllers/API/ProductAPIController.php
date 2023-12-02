@@ -103,7 +103,6 @@ class ProductAPIController extends AppBaseController
      */
     public function update($id, UpdateProductAPIRequest $request)
     {
-        dd($request->all());
         log::error($request->all());
         $input = $request->all();
 
@@ -118,12 +117,12 @@ class ProductAPIController extends AppBaseController
 
         $product = $this->productRepository->update($input, $id);
 
-        $path = $request->image->storeAs('images', $product->id.'.'.$request->image->extension());
-
-        Image::updateOrCreate([
+        //$path = $request->file('image')->storeAs('images', $product->id.'.'.$request->image->extension());
+        //$request->file('arquivo')->storeAs('products', 'novonomeaffffff.jpg')
+        /*Image::updateOrCreate([
             "product_id" => $product->id,
             "url" => asset($path),            
-        ]);
+        ]);*/
         //log::error($product);
         $product = Product::with('image')->find($product->id);
 
